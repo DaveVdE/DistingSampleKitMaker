@@ -5,8 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DistingSampleKitMaker"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Disting Sample Kit Maker" Height="600" Width="935" MinWidth="600" MinHeight="600">
+    <Grid RenderTransformOrigin="0.543,0.509" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="305*"/>
+            <RowDefinition Height="29*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="458*"/>
+            <ColumnDefinition Width="450"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Name:" Grid.Column="1" HorizontalAlignment="Right" Margin="0,6,298,0" VerticalAlignment="Top" Height="26" />
+        <TextBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="157,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="283"/>
+        <Label Content="Source:" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" Margin="0,34,298,0" VerticalAlignment="Top" Height="26" />
+        <TextBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="157,38,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="283"/>
+        <CheckBox Content="Looped" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="157,66,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fade in:" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" Margin="0,82,298,0" VerticalAlignment="Top" Height="26" />
+        <TextBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="157,86,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="71"/>
+        <Label Content="ms" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="233,82,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fade out:" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" Margin="0,110,298,0" VerticalAlignment="Top" Height="26" />
+        <TextBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="157,114,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="71"/>
+        <Label Content="ms" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="233,110,0,0" VerticalAlignment="Top"/>
+        <Label Content="Gap:" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" Margin="0,138,298,0" VerticalAlignment="Top" Height="26" />
+        <TextBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="157,142,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="71"/>
+        <Label Content="ms" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="233,138,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Re-trigger on sample change" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="157,170,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Fixed playback speed:" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="157,190,0,0" VerticalAlignment="Top"/>
+        <TextBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="297,188,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="70"/>
+        <GroupBox Grid.Row="0" Grid.Column="1" Header="Output B" HorizontalAlignment="Left" Height="121" Margin="157,216,0,0" VerticalAlignment="Top" Width="283">
+            <Grid>
+                <RadioButton Content="None" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <RadioButton Content="Ramp up" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top"/>
+                <RadioButton Content="Ramp down" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
+                <RadioButton Content="Triggers:" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top"/>
+                <TextBox HorizontalAlignment="Left" Height="24" Margin="79,68,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="66"/>
+            </Grid>
+        </GroupBox>
+        <TextBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="157,342,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="71"/>
+        <Label Content="Clock count:" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" Margin="0,338,298,0" VerticalAlignment="Top" Height="26" />
+        <TextBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="157,370,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="71"/>
+        <Label Content="Natural MIDI note number:" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" Margin="0,366,298,0" VerticalAlignment="Top" Height="26" />
+        <TextBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="157,398,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="71"/>
+        <Label Content="Switch MIDI note number:" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" Margin="0,394,298,0" VerticalAlignment="Top" Height="26" />
+        <CheckBox Content="Play to completion" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="157,426,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Use start on sample change" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="157,446,0,0" VerticalAlignment="Top"/>
+        <TextBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="157,466,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="71"/>
+        <Label Content="Start quantize:" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" Margin="0,462,298,0" VerticalAlignment="Top" Height="26" />
+        <Button Content="Create" Grid.Column="1" HorizontalAlignment="Left" Margin="352,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="88" Height="29"/>
     </Grid>
 </Window>
